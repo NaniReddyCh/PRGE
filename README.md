@@ -1,13 +1,13 @@
-# PRGE: On-Device Fine-Tuning with LoRA and Zeroth-Order Optimization
+# PRGE: On-Device LLM Fine-Tuning with Parallelized Randomized Gradient Estimation
 
-This repository contains research code for **on-device, privacy-preserving fine-tuning** of large language models using LoRA adapters and zeroth-order (gradient-free) optimization.  
+This repository contains research code for **on-device, privacy-preserving fine-tuning** of large language models (LLMs) using LoRA adapters and PRGE (Parallelized Randomized Gradient Estimation), a zeroth-order (gradient-free) optimization technique.  
 It is designed for efficient, parameter-efficient adaptation on user data, suitable for edge devices.
 
 ## Features
 
+- **PRGE (Parallelized Randomized Gradient Estimation):** Efficient, gradient-free, forward-only optimization for fine-tuning LLMs using only inference engines.
 - **LoRA (Low-Rank Adaptation):** Parameter-efficient fine-tuning by updating only small adapter modules.
-- **Zeroth-Order Optimization (PRGE):** Gradient-free, forward-only optimization for environments where backpropagation is expensive or unavailable.
-- **On-Device Focus:** All computation and data remain on the user's device for privacy.
+- **On-Device Focus:** All computation and data remain on the user's device for privacy and security.
 - **Streamlit UI:** Simple web interface for running and visualizing fine-tuning.
 - **Model Saving:** Fine-tuned models and tokenizers are saved for later use.
 
@@ -17,7 +17,7 @@ It is designed for efficient, parameter-efficient adaptation on user data, suita
 PRGE/
 ├── main.py           # Streamlit UI entry point
 ├── train.py          # Training loop and evaluation
-├── prge_optimizer.py # Zeroth-order optimizer implementation
+├── prge_optimizer.py # PRGE zeroth-order optimizer implementation
 ├── model_utils.py    # Model preparation and LoRA utilities
 ├── dataset_utils.py  # Data loading and preprocessing
 ├── test.py           # Script to test the fine-tuned model
@@ -71,6 +71,11 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 - Results are saved to `results.json` during training.
 - Only LoRA adapter weights are updated for efficiency.
 
+## References
+
+- **Research Paper:** [Enabling Efficient On-Device Fine-Tuning of LLMs Using Only Inference Engines](https://arxiv.org/abs/2409.15520)
+- **Medium Article:** [Fine-tuning Gemma with LoRA for On-Device Inference (Android, iOS, Web) with Separate LoRA Weights](https://medium.com/@denisov.shureg/fine-tuning-gemma-with-lora-for-on-device-inference-android-ios-web-with-separate-lora-weights-f05d1db30d86)
+
 ## License
 
 This code is for research and educational purposes only.  
@@ -82,4 +87,4 @@ Built as part of the **Samsung EnnovateX Hackathon 2025**.
 
 **Team ByteBots**
 
-**PRGE** — Parameter-efficient, privacy-preserving, on-device fine-tuning
+**PRGE** — A Practical Implementation of On-Device LLM Fine-Tuning with Parallelized Randomized Gradient
