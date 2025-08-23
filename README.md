@@ -30,22 +30,25 @@ PRGE/
 ## Quick Start
 
 1. **Install dependencies:**
-    ```sh
-    pip install -r requirements.txt
-    ```
+
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 2. **Run the Streamlit app:**
-    ```sh
-    streamlit run main.py
-    ```
+
+   ```sh
+   streamlit run main.py
+   ```
 
 3. **Fine-tune a model:**
-    - Select model and hyperparameters in the UI.
-    - Click "Start Training".
-    - Fine-tuned models are saved in timestamped folders.
+
+   - Select model and hyperparameters in the UI.
+   - Click "Start Training".
+   - Fine-tuned models are saved in timestamped folders.
 
 4. **Test your model:**
-    - Use `test.py` to load and generate text with your fine-tuned model.
+   - Use `test.py` to load and generate text with your fine-tuned model.
 
 ## Example: Testing a Fine-Tuned Model
 
