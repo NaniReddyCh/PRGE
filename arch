@@ -1,0 +1,9 @@
+prge/
+│── main.py                 # Entry point (Streamlit UI)
+│── train.py                # Training loop + evaluation
+│── model_utils.py          # Model prep (LoRA-FA injection, param count)
+│── lora_fa_layer.py        # Custom LoRA-FA Layer
+│── prge_optimizer.py       # Custom P-RGE Optimizer
+│── dataset_utils.py        # Dataset loading & preprocessing
+│── results.json            # Store logs/results for plotting
+│── plots.py                # Helper for plotting results

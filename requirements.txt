@@ -1,0 +1,7 @@
+torch
+transformers
+peft
+bitsandbytes
+datasets
+streamlit
+matplotlib
