@@ -10,6 +10,7 @@ It is designed for efficient, parameter-efficient adaptation on user data, suita
 - **On-Device Focus:** All computation and data remain on the user's device for privacy and security.
 - **Streamlit UI:** Simple web interface for running and visualizing fine-tuning.
 - **Model Saving:** Fine-tuned models and tokenizers are saved for later use.
+- **Mobile Export:** `mobile_export.py` demonstrates a simple approach to export the merged (base + LoRA) model to TorchScript or ExecuTorch format, making it possible to run the model in Android or other mobile runtimes.
 
 ## Directory Structure
 
@@ -22,6 +23,7 @@ PRGE/
 ├── dataset_utils.py  # Data loading and preprocessing
 ├── test.py           # Script to test the fine-tuned model
 ├── plots.py          # Plotting utilities
+├── mobile_export.py  # Export fine-tuned model for mobile/edge runtimes
 ├── requirements.txt  # Python dependencies
 ├── .gitignore
 └── README.md
