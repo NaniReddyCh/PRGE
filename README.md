@@ -73,6 +73,10 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 - Results are saved to `results.json` during training.
 - Only LoRA adapter weights are updated for efficiency.
 
+## More Details
+
+For a comprehensive explanation of the methodology, experiments, and results, please refer to the attached paper: **PRGE_fine_tuning.pdf** included in this repository.
+
 ## References
 
 - **Research Paper:** [Enabling Efficient On-Device Fine-Tuning of LLMs Using Only Inference Engines](https://arxiv.org/abs/2409.15520)
