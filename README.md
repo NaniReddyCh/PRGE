@@ -87,6 +87,6 @@ Built as part of the **Samsung EnnovateX Hackathon 2025**.
 
 ## Authors
 
-**Team ByteBots**
-
-**PRGE** — A Practical Implementation of On-Device LLM Fine-Tuning with Parallelized Randomized Gradient
+**Team ByteBots**  
+Srikrishna, Srikanth, Kiran, Vishweshwar  
+Students from IIT Hyderabad
